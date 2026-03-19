@@ -1,0 +1,20 @@
+.container div {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background: red;
+}
+.green{
+    background: green;
+}
+.blue{
+    background: blue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
