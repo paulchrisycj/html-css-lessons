@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Selectors</title>
+        <style>
+            .container p{
+                color: red;
+            }
+            .container > p{
+                font-weight: bold;
+            }
+            p + p + p{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Descendant vs Child Selector + Adjacent Selector.</h2>
+            <p>This is the first paragraph</p>
+            <p>This is the second paragraph</p>
+            <p>This is the third paragraph</p>
+            <p>This is the fourth paragraph</p>
+            <div>
+                <p>This is the fifth paragraph inside a nested div.</p>
+            </div>
+        </div>
+    </body>
+</html>

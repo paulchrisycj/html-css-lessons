@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            button:hover{
+                background-color: blue;
+                color: white;
+            }
+            button:active{
+                background-color: red;
+                color: white;
+            }
+            input:focus{
+                border:2px solid black;
+            }
+            p::before {
+                content: "Before the text: ";
+                font-weight: bold;
+            }
+            p::after {
+                content: " :After the text.";
+                font-style: italic;
+            }
+
+            ul li:first-child{
+                font-weight: bold;
+            }
+            ul li:last-child{
+                color: red;
+            }
+            ul li:nth-child(2n){
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <button type="submit">
+            Submit
+        </button>
+        <br>
+        <p>This is a long paragraph to show the 
+            effects of Pseudo Elements Selectors in CSS</p>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+    </body>
+</html>
