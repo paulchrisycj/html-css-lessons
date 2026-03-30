@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Absolute Positioning</title>
+        <style>
+            /* Try changing top and left to different values, 
+            and inspect on your browser to see the effects. */
+            .box{
+                /* position: relative; */
+                /* top: 20px; */
+                background-color: #f2f2f2;
+                padding: 20px;
+                border: 1px solid #ccc
+            }
+            .child-box{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background-color: #ddd;
+                padding: 10px;
+                border: 1px solid #999
+            }
+            /* Absolute positioning will only work IF
+            it has a parent OR ancestor with relative positioning.
+            It does not work if the parent or ancestor is not of relative
+            positioning, since it is relative TO the ancestor's position. */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                This is the parent box
+                <div class="child-box">
+                    This is the child box with absolute positioning.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
