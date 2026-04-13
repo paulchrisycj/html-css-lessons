@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Bootstrap Grid Lesson</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- <style>
+            .btn-primary{
+                background-color: yellow;
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg pt-0">
+            <div class="container-fluid bg-dark navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">My Website</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Bootstrap Grid System -->
+        <hr class="border border-dark opacity-100" />
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 bg-primary">
+                    <h1>This breaks the row into the first 6 parts</h1>
+                </div>
+                <div class="col-md-6 col-sm-12 bg-success">
+                    <h1>This breaks the row into the last 6 parts</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 bg-warning">
+                    <h1>A row in Bootstrap grid has 12 parts in total.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 bg-info">
+                    <h1>This row has 3 content of equal sizing</h1>
+                </div>
+                <div class="col-md-4 col-sm-6 bg-info">
+                    <h1>This row has 3 content of equal sizing</h1>
+                </div>
+                <div class="col-md-4 col-sm-12 bg-info">
+                    <h1>This row has 3 content of equal sizing</h1>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        Sizing Chart
+        col-xs: Extra small devices (portrait phones, less than 576px)
+        col-sm: Small devices (landscape phones, 576px and up)
+        col-md: Medium devices (tablets, 768px and up)
+        col-lg: Large devices (desktops, 992px and up)
+        col-xl: Extra large devices (large desktops, 1200px and up)
+        -->
+
+        <!-- Bootstrap Form -->
+        <div class="container">
+            <form>
+                <div class="form-group w-25">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control text-center" id="name" placeholder="Enter your name" />
+                </div>
+                <div class="form-group w-25">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Additional Components -->
+        <div class="alert alert-success" role="alert">Congratulations! You successfully completed this task.</div>
+
+        <!-- Bootstrap Card -->
+        <div class="card" style="width: 18rem">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh" class="card-img-top" alt="An example image" />
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <!-- Button to trigger the modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+
+        <!-- Modal structure -->
+        <div class="modal" tabindex="-1" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
