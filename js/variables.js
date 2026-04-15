@@ -58,11 +58,39 @@ console.log(fruits[2]) // Banana
 // Left side: Key, Right side: Value
 
 // Objects with Arrays
-const movie = {
+// Arrays within an object
+const movie1 = {
     name: "Avengers: Endgame",
     year: "2019",
     directors: ["Anthony Russo", "Joe Russo"],
     runningTime: "3h 1m",
     storyBy: ["Stan Lee", "Jack Kirby", "Jim Starlin"]
 }
-console.log(movie.directors[0])
+console.log(movie1.directors[0])
+
+// Arrays of Objects
+const movie2 = {
+    name: "Up",
+    year: "2009",
+    directors: ["Pete Doctor"],
+    runningTime: "1h 35m",
+    storyBy: ["Pete Doctor", "Tom McCarthy", "Bob Peterson"]
+}
+
+const movies = [movie1, movie2]
+console.log(movies)
+console.log(movies[1].storyBy[1]) // Tom McCarthy
+
+
+// Multi-dimensional array (2D Array)
+// What you guys have learnt is 1D Array
+
+const heroes = [
+    ["ironman", "spiderman", "hulk"],
+    ["superman", "batman", "green arrow"],
+    ["Aang", "Korra", "Katara"]
+]
+
+console.log(heroes[0][1]); // Spiderman
+console.log(heroes[1][2]); // Green Arrow
+console.log(heroes[2][0]); // Aang
