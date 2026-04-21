@@ -4,8 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>JavaScript HTML File</title>
+        <style>
+            .my-class{
+                font-size: 24px;
+                color: red;
+            }
+        </style>
     </head>
     <body>
-        <script src="block-scoping.js"></script>
+        <div id="my-element">
+            Inside the div with ID my-element
+        </div>
+        <div class="my-class">
+            Inside the div with class my-class
+        </div>
+        <div class="my-class">
+            Inside the ANOTHER div with class my-class
+        </div>
+        <p>This is a paragraph text</p>
+        <script>
+            // let element = document.getElementById("my-element")
+            // let element = document.getElementsByClassName("my-class")
+            // let element = document.getElementsByTagName("p")
+            // let element = document.querySelector(".my-class")
+            // let element = document.querySelectorAll(".my-class")
+            // console.log(element)
+        </script>
+        <script src="dom-manipulation.js"></script>
     </body>
 </html>
